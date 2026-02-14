@@ -3,7 +3,7 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { MediationAnalysis } from "../types";
 
 export const analyzeMediation = async (partnerA: string, partnerB: string): Promise<MediationAnalysis> => {
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
+  const ai = new GoogleGenAI({ apiKey: (import.meta as any).env.VITE_GEMINI_API_KEY });
   
   const response = await ai.models.generateContent({
     model: "gemini-3-flash-preview",
