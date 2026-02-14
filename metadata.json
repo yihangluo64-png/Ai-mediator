@@ -1,0 +1,7 @@
+{
+  "name": "Harmonize - AI Relationship Mediator",
+  "description": "A sophisticated AI-powered relationship tool designed to help couples navigate conflicts, improve communication, and track shared growth through empathetic mediation.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

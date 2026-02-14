@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmonize - AI Relationship Mediator</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#d8914c",
+                        "primary-dark": "#b06d2e",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#101922",
+                        "surface-dark": "#18232e",
+                        "surface-highlight": "#202d3b",
+                        terracotta: {
+                            50: '#fdf6f3',
+                            100: '#fae9e0',
+                            200: '#f5d3c3',
+                            300: '#edb59e',
+                            400: '#e38d71',
+                            500: '#d86b4c',
+                            600: '#c55238',
+                            700: '#a3402d',
+                            800: '#86362a',
+                            900: '#6d2f26',
+                        },
+                        cream: {
+                            50: '#fcfbf9',
+                            100: '#f7f4f0',
+                            200: '#efe9e1',
+                            300: '#e4dacd',
+                            800: '#5a5248',
+                            900: '#2d2924',
+                        }
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                        serif: ["Merriweather", "serif"]
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        body {
+            background-color: #f8f7f6;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .glass-panel {
+            background: rgba(216, 145, 76, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .pulse-shadow {
+            box-shadow: 0 0 10px rgba(216, 145, 76, 0.3);
+        }
+        .glow-primary {
+            box-shadow: 0 0 15px rgba(216, 145, 76, 0.15);
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-900 dark:text-gray-100">
+    <div id="root"></div>
+</body>
+</html>
